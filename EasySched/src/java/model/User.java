@@ -6,8 +6,7 @@ public class User {
     this.id = id; this.username = username; this.password = password;
   }
   // getters and setters
-
-    public int getId() {
+   public int getId() {
         return id;
     }
 
