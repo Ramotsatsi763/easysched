@@ -13,11 +13,16 @@
 <body>
   <h2>My Appointments</h2>
   <table border="1">
-    <tr><th>Date</th><th>Time</th><th>Action</th></tr>
+    <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Action</th>
+    </tr>
     <c:forEach var="appt" items="${appointments}">
       <tr>
-        <td>${appt.date}</td><td>${appt.time}</td>
-        <td>
+        <td>${appt.date}</td>
+        <td>${appt.time}</td>
+        </tr>
           <form action="CancelAppointmentServlet" method="post">
             <input type="hidden" name="apptId" value="${appt.id}" />
             <input type="submit" value="Cancel" />
